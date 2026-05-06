@@ -5,12 +5,15 @@ function listarNumeros(){
 }
 
 function ejecutar(numEjercicio){
-    if (numEjercicio == 1){
-        listarNumeros();
-    } else if (numEjercicio == 2){
-        listarNumerosReversa();
-    } else if (numEjercicio == 3){
-        listarPares();
+    switch (numEjercicio){
+        case 1: listarNumeros();
+            break;
+        case 2: listarNumerosReversa();
+            break;
+        case 3: listarPares();
+            break;
+        case 4: listarImpares();
+        
     }
 
 }
@@ -21,6 +24,11 @@ function listarNumerosReversa(){
 }
 function listarPares(){
     for (let i=0; i<10; i+=2){
+        console.log(i);
+    }
+}
+function listarImpares(){
+    for (let i=1; i<9; i+=2){
         console.log(i);
     }
 }
