@@ -1,0 +1,158 @@
+/* Fuente estilo pixel */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    min-height:100vh;
+
+    /* Fondo tipo videojuego */
+    background: linear-gradient(
+        to bottom,
+        #090114 0%,
+        #18122b 35%,
+        #18122b 35%,
+        #090114 100%
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    color:white;
+}
+
+/* Contenedor principal */
+main{
+    width:100%;
+    max-width:500px;
+    text-align:center;
+}
+
+/* Título */
+h1{
+    font-size:32px;
+    color:#dfc9c5;
+    margin-bottom:30px;
+
+    text-shadow:
+        4px 4px 0px #000,
+        0px 0px 15px rgba(238, 0, 255, 0.7);
+}
+
+/* Botón PROBAR */
+header{
+    margin-bottom:25px;
+}
+
+.btn-probar{
+    font-family:'Press Start 2P', cursive;
+
+    background: linear-gradient(
+        to bottom,
+        #572198,
+        #331779
+    );
+
+    border:4px solid #000;
+    color:white;
+
+    padding:18px 30px;
+    font-size:16px;
+
+    cursor:pointer;
+
+    border-radius:10px;
+
+    box-shadow:
+        0 6px 0 #7a004b,
+        0 0 20px rgba(149, 0, 255, 0.6);
+
+    transition:0.15s;
+}
+
+.btn-probar:hover{
+    transform:translateY(-3px);
+}
+
+.btn-probar:active{
+    transform:translateY(4px);
+
+    box-shadow:
+        0 2px 0 #7a1d00;
+}
+
+/* Caja de tabla */
+.tabla-container{
+    background:#12051f;
+
+    border:5px solid #6d3bbd;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:
+        0 0 25px rgba(145,70,255,0.4),
+        inset 0 0 20px rgba(0,0,0,0.8);
+}
+
+/* Tabla */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+/* Encabezados */
+th{
+    color:#ffe600;
+    padding:15px;
+
+    font-size:13px;
+
+    border-bottom:3px solid #6d3bbd;
+}
+
+/* Filas */
+td{
+    padding:14px;
+    font-size:12px;
+
+    color:#00e5ff;
+
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+/* Efecto hover */
+tr:hover{
+    background:rgba(255,255,255,0.05);
+}
+
+/* Responsive */
+@media(max-width:600px){
+
+    h1{
+        font-size:22px;
+    }
+
+    .btn-probar{
+        width:100%;
+        font-size:12px;
+        padding:16px;
+    }
+
+    th,
+    td{
+        font-size:10px;
+        padding:10px;
+    }
+
+    .tabla-container{
+        padding:12px;
+    }
+}
