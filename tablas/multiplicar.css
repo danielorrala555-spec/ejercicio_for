@@ -21,7 +21,7 @@ body{
 
     color:white;
 
-    overflow:hidden;
+    overflow-x:hidden;
 
     position:relative;
 
@@ -303,28 +303,287 @@ tr:hover{
 
 /* Responsive */
 
-@media(max-width:600px){
+/* ========================= */
+/* TABLETS */
+/* ========================= */
 
-    h1{
-        font-size:20px;
+@media screen and (max-width: 900px){
+
+    body{
+
+        padding:30px 15px;
+
+        overflow-y:auto;
+    }
+
+    main{
+
+        width:100%;
+
+        max-width:100%;
+    }
+
+    header{
+
+        width:100%;
+
+        gap:15px;
     }
 
     .mensaje{
-        font-size:8px;
+
+        width:100%;
+
+        max-width:600px;
+
+        margin:20px 0 40px 0;
+
+        font-size:9px;
+
+        line-height:2.2;
+
+        padding:0 10px;
+    }
+
+    h1{
+
+        font-size:22px;
+
+        line-height:1.5;
+
+        margin-bottom:20px;
+    }
+
+    h5{
+
+        text-align:center;
+
+        font-size:10px;
+
+        line-height:1.8;
     }
 
     #txtTabla{
-        width:100%;
+
+        width:260px;
+
+        max-width:90%;
+
+        padding:16px;
+
         font-size:10px;
     }
 
     .btn-probar{
-        width:100%;
-        font-size:10px;
+
+        width:260px;
+
+        max-width:90%;
+
+        font-size:11px;
+
+        padding:16px;
     }
 
-    th,
-    td{
-        font-size:9px;
+    .tablaContainer{
+
+        width:100%;
+
+        overflow-x:auto;
+
+        padding:18px;
     }
+
+    table{
+
+        min-width:100%;
+    }
+
+    th{
+
+        font-size:10px;
+
+        padding:14px 10px;
+    }
+
+    td{
+
+        font-size:9px;
+
+        padding:12px 8px;
+
+        line-height:1.6;
+    }
+}
+
+/* ========================= */
+/* CELULARES */
+/* ========================= */
+
+@media screen and (max-width: 600px){
+
+    body{
+
+        padding:20px 10px;
+
+        align-items:flex-start;
+
+        overflow-y:auto;
+    }
+
+    header{
+
+        width:100%;
+
+        gap:12px;
+    }
+
+    .mensaje{
+
+        width:100%;
+
+        max-width:100%;
+
+        margin:10px 0 30px 0;
+
+        padding:0 5px;
+
+        font-size:7px;
+
+        line-height:2.3;
+    }
+
+    h1{
+
+        font-size:16px;
+
+        line-height:1.7;
+
+        margin-bottom:18px;
+    }
+
+    h5{
+
+        font-size:8px;
+
+        text-align:center;
+
+        line-height:2;
+    }
+
+    .flecha{
+
+        font-size:18px;
+
+        margin-top:5px;
+    }
+
+    #txtTabla{
+
+        width:100%;
+
+        max-width:280px;
+
+        padding:14px;
+
+        font-size:8px;
+
+        border-width:2px;
+    }
+
+    .btn-probar{
+
+        width:100%;
+
+        max-width:280px;
+
+        padding:14px;
+
+        font-size:8px;
+
+        border-width:3px;
+    }
+
+    .tablaContainer{
+
+        width:100%;
+
+        padding:12px;
+
+        border-radius:15px;
+
+        overflow-x:auto;
+    }
+
+    table{
+
+        width:100%;
+    }
+
+    th{
+
+        font-size:8px;
+
+        padding:10px 6px;
+
+        line-height:1.8;
+    }
+
+    td{
+
+        font-size:7px;
+
+        padding:10px 6px;
+
+        line-height:1.8;
+
+        word-break:break-word;
+    }
+}
+
+/* ========================= */
+/* CELULARES MUY PEQUEÑOS */
+/* ========================= */
+
+@media screen and (max-width: 380px){
+
+    .mensaje{
+
+        font-size:6px;
+    }
+
+    h1{
+
+        font-size:13px;
+    }
+
+    h5{
+
+        font-size:7px;
+    }
+
+    #txtTabla{
+
+        font-size:7px;
+
+        padding:12px;
+    }
+
+    .btn-probar{
+
+        font-size:7px;
+
+        padding:12px;
+    }
+
+    th{
+
+        font-size:7px;
+    }
+
+    td{
+
+        font-size:6px;
+    }
+
 }
